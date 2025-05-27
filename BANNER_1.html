@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .banner {
+            border: 2px solid #000;
+            padding: 20px;
+            display: inline-block;
+            background-color: #f8f8f8;
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .yes {
+            background-color: green;
+            color: white;
+        }
+        .no {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <h2>Maior de 18 anos ?</h2>
+    <button class="button yes" onclick="proceed()">Sim</button>
+    <button class="button no" onclick="redirect()">N&atilde;o</button>
+</div>
+
+<script>
+    function proceed() {
+        window.location.href = "https://epicurobrasil.com/"; // Replace with your actual site URL
+    }
+    function redirect() {
+        window.location.href = "https://www.disney.com.br";
+    }
+</script>
+
+</body>
+</html>
